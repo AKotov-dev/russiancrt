@@ -56,18 +56,20 @@ deb=0
 3=trust list | grep Russian
 4=
 5=# Clear Caches (Mozilla, Chrome, Opera, Chromium, Palemoon)
-6=rm -rf ~/.cache/mozilla/* \
-7=~/.cache/google-chrome/* \
-8=~/.cache/opera/* \
-9=~/.cache/chromium/* \
-10=~/.cache/moonchild\ productions/*
-11=
-12=# Clear Cookies
-13=rm -f $(find ~/.mozilla/* -type f -name "cookies.sqlite") \
-14=~/.config/google-chrome/Default/Cookies* \
-15=~/.config/opera/Cookies* \
-16=~/.config/chromium/Default/Cookies* \
-17=$(find ~/.moonchild\ productions/pale\ moon/* -type f -name "cookies.sqlite")
+6=h="/home/$(logname)"
+7=
+8=rm -rf $h/.cache/mozilla/* \
+9=$h/.cache/google-chrome/* \
+10=$h/.cache/opera/* \
+11=$h/.cache/chromium/* \
+12=$h/.cache/moonchild\ productions/*
+13=
+14=# Clear Cookies
+15=rm -f $(find $h/.mozilla/* -type f -name "cookies.sqlite") \
+16=$h/.config/google-chrome/Default/Cookies* \
+17=$h/.config/opera/Cookies* \
+18=$h/.config/chromium/Default/Cookies* \
+19=$(find $h/.moonchild\ productions/pale\ moon/* -type f -name "cookies.sqlite")
 
 [AFTERREMOVE]
 0=#!/bin/bash
