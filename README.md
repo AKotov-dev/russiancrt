@@ -1,5 +1,5 @@
 # russiancrt
-[Сертификаты Минцифры](https://www.gosuslugi.ru/crt) для установки в Linux (rpm/deb)
+[Сертификаты Минцифры](https://www.gosuslugi.ru/crt) для установки в Mageia Linux
 
 **Зависимости:** rootcerts
 
