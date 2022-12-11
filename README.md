@@ -2,7 +2,7 @@
 [Сертификаты Минцифры](https://www.gosuslugi.ru/crt) для установки в Linux (rpm/deb)
 
 **Зависимости:** rootcerts
-
+  
 
 В процессе установки пакета выполняется:
 + копирование сертификатов в `/usr/share/pki/ca-trust-source/anchors/`
