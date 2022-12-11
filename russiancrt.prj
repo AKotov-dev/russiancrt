@@ -2,10 +2,10 @@
 name=russiancrt
 
 [VERSION]
-version=0.1
+version=2022
 
 [RELEASE]
-release=2022.mrx9
+release=1.mrx9
 
 [GROUP]
 group=Accessibility
