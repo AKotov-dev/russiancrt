@@ -1,5 +1,5 @@
 # russiancrt
-[Сертификаты Минцифры](https://www.gosuslugi.ru/crt) для установки (rpm/deb)
+[Сертификаты Минцифры](https://www.gosuslugi.ru/crt) для установки в Linux (rpm/deb)
 
 **Зависимости:** rootcerts
 
