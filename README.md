@@ -1,6 +1,8 @@
 # russiancrt
-[Сертификаты Минцифры](https://www.gosuslugi.ru/crt) для установки в Mageia Linux
-
+[Сертификаты Минцифры](https://www.gosuslugi.ru/crt) для установки в Mageia Linux  
+  
+[Стоит ли устанавливать российский TLS-сертификат с «Госуслуг»?](https://www.blancvpn.com/blog/stoit-li-ustanavlivat-rossiiskii-tls-sertifikat-s-gosuslug)
+  
 **Зависимости:** rootcerts
 
 ВНИМАНИЕ! ПЕРЕД УСТАНОВКОЙ ПАКЕТА СЕРТИФИКАТОВ ЗАКРОЙТЕ ВСЕ ОКНА ВАШЕГО БРАУЗЕРА!
