@@ -37,7 +37,7 @@ wget https://gu-st.ru/content/lending/russian_trusted_sub_ca_pem.crt
 ```
 ### Апдейт хранилища сертификатов
 ```
-update-ca-certificates
+update-ca-trust
 ```
 ### Проверка установки сертификатов
 ```
