@@ -35,7 +35,7 @@
 
 Проверить установку сертификатов можно здесь: http://www.sberbank.ru/ru/certificates
 
-## Ручная установка от Сбера
+### Ручная установка от Сбера
 Инструкция: https://www.sberbank.ru/ru/certificates/linux
 
 ### Обновление вручную (Mageia)
