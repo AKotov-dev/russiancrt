@@ -5,13 +5,13 @@ name=russiancrt
 version=2022
 
 [RELEASE]
-release=2.mrx10
+release=3.mrx10
 
 [GROUP]
 group=Accessibility
 
 [DESCRIPTION]
-0=Сertificates of the Ministry of Digital Development of Russia
+0=Secure certificates from the Russian Ministry of Digital Development
 1=---
 2=More information: /usr/share/doc/package_name/repack.txt
 
@@ -22,7 +22,7 @@ maintainer=Alex Kotov
 vendor=alex_q_2000 (C) 2026
 
 [SUMMARY]
-summary=Сertificates of the Ministry of Digital Development of Russia
+summary=Secure certificates from the Russian Ministry of Digital Development
 
 [URLCOPY]
 urlcopy=https://github.com/AKotov-dev/russiancrt
@@ -43,8 +43,8 @@ noarch=1
 deb=0
 
 [FILES]
-0=/usr/share/pki/ca-trust-source/anchors/russian_trusted_sub_ca_pem.crt
-1=/usr/share/pki/ca-trust-source/anchors/russian_trusted_root_ca_pem.crt
+0=/usr/share/pki/ca-trust-source/anchors/russian_new_root_ca.crt
+1=/usr/share/pki/ca-trust-source/anchors/Russian-Secured-Private-Root.crt
 2=/usr/share/doc/russiancrt/
 
 [AFTERINSTALL]
@@ -71,66 +71,73 @@ devtool=Shell
 toolversion=unknown
 
 [INFO]
-0=Инструкция Сбера с прямыми ссылками на сертификаты
-1=---
-2=https://www.sberbank.ru/ru/certificates/linux
+0=v2002-3
+1=+ Только для зон ru, su, рф
+2=+ RPM пакеты для Mageia Linux
 3=
-4=Обновление вручную (Mageia)
-5=---
-6=su/password
-7=mkdir -p /usr/share/pki/ca-trust-source/anchors
-8=cd /usr/share/pki/ca-trust-source/anchors/
-9=
-10=Скачать корневой сертификат
-11=---
-12=wget https://gu-st.ru/content/lending/russian_trusted_root_ca_pem.crt
-13=
-14=Скачать выпускающий сертификат
-15=---
-16=wget https://gu-st.ru/content/lending/russian_trusted_sub_ca_pem.crt
-17=
-18=Апдейт хранилища сертификатов
-19=---
-20=update-ca-trust
-21=
-22=Проверка установки сертификатов
-23=---
-24=trust list | grep Russian
-25=
-26=Проверка даты окончания действия сертификатов
-27=---
-28=openssl x509 -enddate -noout -in ./russian_trusted_sub_ca_pem.crt
-29=openssl x509 -enddate -noout -in ./russian_trusted_root_ca_pem.crt
-30=
-31=
-32=Инструкция от Минцифры без прямых ссылок на сертификаты
-33=---
-34=# Скачать корневой и выпускающий сертификаты: https://www.gosuslugi.ru/crt
-35=> mkdir /usr/share/pki/ca-trust-source/anchors
-36=> cp russian_trusted_root_ca.crt /usr/share/pki/ca-trust-source/anchors
-37=> cp russian_trusted_sub_ca.crt /usr/share/pki/ca-trust-source/anchors
+4=**Примечаие:** Использован механизм `nameConstraint` — ограничение, которое позволяет указать для каких доменов применимы сертификаты этого дерева сертификатов.
+5=
+6=
+7=Инструкция Сбера с прямыми ссылками на сертификаты
+8=---
+9=https://www.sberbank.ru/ru/certificates/linux
+10=
+11=Обновление вручную (Mageia)
+12=---
+13=su/password
+14=mkdir -p /usr/share/pki/ca-trust-source/anchors
+15=cd /usr/share/pki/ca-trust-source/anchors/
+16=
+17=Скачать корневой сертификат
+18=---
+19=wget https://gu-st.ru/content/lending/russian_trusted_root_ca_pem.crt
+20=
+21=Скачать выпускающий сертификат
+22=---
+23=wget https://gu-st.ru/content/lending/russian_trusted_sub_ca_pem.crt
+24=
+25=Апдейт хранилища сертификатов
+26=---
+27=update-ca-trust
+28=
+29=Проверка установки сертификатов
+30=---
+31=trust list | grep Russian
+32=
+33=Проверка даты окончания действия сертификатов
+34=---
+35=openssl x509 -enddate -noout -in ./russian_trusted_sub_ca_pem.crt
+36=openssl x509 -enddate -noout -in ./russian_trusted_root_ca_pem.crt
+37=
 38=
-39=# Обновить хранилище сертификатов
-40=> update-ca-trust
-41=# Проверить установку
-42=> trust list | grep Russian
-43=label: Russian Trusted Sub CA
-44=label: Russian Trusted Root CA
+39=Инструкция от Минцифры без прямых ссылок на сертификаты
+40=---
+41=# Скачать корневой и выпускающий сертификаты: https://www.gosuslugi.ru/crt
+42=> mkdir /usr/share/pki/ca-trust-source/anchors
+43=> cp russian_trusted_root_ca.crt /usr/share/pki/ca-trust-source/anchors
+44=> cp russian_trusted_sub_ca.crt /usr/share/pki/ca-trust-source/anchors
 45=
-46=# Очистить кеш
-47=# Caches (Mozilla, Chrome, Opera, Chromium, Palemoon)
-48=rm -rf ~/.cache/mozilla/* \
-49=~/.cache/google-chrome/* \
-50=~/.cache/opera/* \
-51=~/.cache/chromium/* \
-52=~/.cache/moonchild\ productions/*
-53=
-54=# Очистить Cookies
-55=rm -f $(find ~/.mozilla/* -type f -name "cookies.sqlite") \
-56=~/.config/google-chrome/Default/Cookies* \
-57=~/.config/opera/Cookies* \
-58=~/.config/chromium/Default/Cookies* \
-59=$(find ~/.moonchild\ productions/pale\ moon/* -type f -name "cookies.sqlite")
+46=# Обновить хранилище сертификатов
+47=> update-ca-trust
+48=# Проверить установку
+49=> trust list | grep Russian
+50=label: Russian Trusted Sub CA
+51=label: Russian Trusted Root CA
+52=
+53=# Очистить кеш
+54=# Caches (Mozilla, Chrome, Opera, Chromium, Palemoon)
+55=rm -rf ~/.cache/mozilla/* \
+56=~/.cache/google-chrome/* \
+57=~/.cache/opera/* \
+58=~/.cache/chromium/* \
+59=~/.cache/moonchild\ productions/*
 60=
-61=---
-62=Проверка наличия сертификатов в системе: http://www.sberbank.ru/ru/certificates
+61=# Очистить Cookies
+62=rm -f $(find ~/.mozilla/* -type f -name "cookies.sqlite") \
+63=~/.config/google-chrome/Default/Cookies* \
+64=~/.config/opera/Cookies* \
+65=~/.config/chromium/Default/Cookies* \
+66=$(find ~/.moonchild\ productions/pale\ moon/* -type f -name "cookies.sqlite")
+67=
+68=---
+69=Проверка наличия сертификатов в системе: http://www.sberbank.ru/ru/certificates
