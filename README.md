@@ -20,6 +20,8 @@
   
 [Стоит ли устанавливать российские сертификаты?](https://www.blancvpn.com/blog/stoit-li-ustanavlivat-rossiiskii-tls-sertifikat-s-gosuslug)  
   
+[Техническое: локальный корневой сертификат с кросс-подписью и nameConstraints](https://dxdt.blog/2026/08/22/18987/?utm_source=chatgpt.com)  
+  
 [Сертификаты Минцифры](https://www.gosuslugi.ru/crt) для установки в Linux.  
   
 **Примечание:** Mozilla Firefox не поддерживается (сертификаты ставятся вручную из браузера).  
