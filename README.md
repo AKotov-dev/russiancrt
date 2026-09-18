@@ -1,5 +1,5 @@
 # russiancrt
-Содержимое пакета для установки сертификатов Минцифры:  
+Содержимое пакета RPM для установки сертификатов Минцифры:  
 - /usr/share/pki/ca-trust-source/anchors/russian_new_root_ca.crt
 - /usr/share/pki/ca-trust-source/anchors/Russian-Secured-Private-Root.crt
 - /usr/share/doc/russiancrt/
