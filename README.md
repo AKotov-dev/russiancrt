@@ -1,8 +1,15 @@
 # russiancrt
-Содержимое пакета RPM для установки сертификатов Минцифры:  
+Содержимое пакета RPM:
 - /usr/share/pki/ca-trust-source/anchors/russian_new_root_ca.crt
 - /usr/share/pki/ca-trust-source/anchors/Russian-Secured-Private-Root.crt
 - /usr/share/doc/russiancrt/
+
+Содержимое пакета DEB:
+- /usr/local/share/ca-certificates/russian_new_root_ca.crt
+- /usr/local/share/ca-certificates/Russian-Secured-Private-Root.crt
+- /usr/share/doc/russiancrt/
+
+**Важно:** Если сертификаты Минцифры ставились ранее вручную, перед установкой пакета удалите их.
 
 ## Безопасные сертификаты
 
