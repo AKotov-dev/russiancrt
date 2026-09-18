@@ -50,13 +50,12 @@ deb=0
 [AFTERINSTALL]
 0=#!/bin/bash
 1=
-2=update-ca-trust
-3=trust list | grep Russian
+2=update-ca-trust extract >/dev/null 2>&1 || :
 
 [AFTERREMOVE]
 0=#!/bin/bash
 1=
-2=update-ca-trust
+2=update-ca-trust extract >/dev/null 2>&1 || :
 
 [URL32]
 url32=https://github.com/AKotov-dev/russiancrt
