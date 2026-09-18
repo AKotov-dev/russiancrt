@@ -31,7 +31,7 @@ urlcopy=https://github.com/AKotov-dev/russiancrt
 license=GPLv2
 
 [DEPS]
-deps=rootcerts openssl
+deps=
 
 [META]
 meta=0
