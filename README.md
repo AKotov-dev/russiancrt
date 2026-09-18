@@ -31,7 +31,7 @@
 Проверить действие ограничений можно с помощью [test_gui](https://github.com/AKotov-dev/russiancrt/blob/main/test_gui.tar.gz).  
   
 ---
-### Общая информация (предыдущая, небезопасная редакция)
+### Архивная информация (предыдущая, небезопасная редакция)
   
 [Стоит ли устанавливать российские сертификаты?](https://www.blancvpn.com/blog/stoit-li-ustanavlivat-rossiiskii-tls-sertifikat-s-gosuslug)  
   
