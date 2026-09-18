@@ -40,22 +40,22 @@ meta=0
 noarch=1
 
 [DEB]
-deb=0
+deb=1
 
 [FILES]
-0=/usr/share/pki/ca-trust-source/anchors/russian_new_root_ca.crt
-1=/usr/share/pki/ca-trust-source/anchors/Russian-Secured-Private-Root.crt
+0=/usr/local/share/ca-certificates/russian_new_root_ca.crt
+1=/usr/local/share/ca-certificates/Russian-Secured-Private-Root.crt
 2=/usr/share/doc/russiancrt/
 
 [AFTERINSTALL]
 0=#!/bin/bash
 1=
-2=update-ca-trust extract >/dev/null 2>&1 || :
+2=update-ca-certificates --fresh >/dev/null 2>&1 || true
 
 [AFTERREMOVE]
 0=#!/bin/bash
 1=
-2=update-ca-trust extract >/dev/null 2>&1 || :
+2=update-ca-certificates --fresh >/dev/null 2>&1 || true
 
 [URL32]
 url32=https://github.com/AKotov-dev/russiancrt
