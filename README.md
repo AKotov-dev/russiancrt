@@ -13,6 +13,8 @@
 
 Все последующие обновления сертификатов в рамках данного пакета также будут обрабатываться [этим](https://habr.com/ru/articles/1071256/) механизмом.  
   
+![](https://github.com/AKotov-dev/russiancrt/blob/main/test1.png)
+  
 Генерация модифицированных сертификатов выполняется [скриптом](https://github.com/AKotov-dev/russiancrt/blob/main/secure-russiancrt.tar.gz), входящим в состав репозитория. Исходный закрытый ключ УЦ не используется и не требуется.  
   
 ---
