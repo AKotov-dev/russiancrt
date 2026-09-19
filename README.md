@@ -1,12 +1,12 @@
 # russiancrt
 Содержимое пакета RPM:
-- /usr/share/pki/ca-trust-source/anchors/russian_secured_private_root_ca.crt
-- /usr/share/pki/ca-trust-source/anchors/russian_constrained_intermediate_ca.crt
+- /usr/share/pki/ca-trust-source/anchors/russian_secured_private_root_ca.crt *(Доверенный сертификат)*
+- /usr/share/pki/ca-trust-source/anchors/russian_constrained_intermediate_ca.crt *(Промежуточный сертификат)*
 - /usr/share/doc/russiancrt/
 
 Содержимое пакета DEB:
-- /usr/local/share/ca-certificates/russian_secured_private_root_ca.crt
-- /usr/local/share/ca-certificates/russian_constrained_intermediate_ca.crt
+- /usr/local/share/ca-certificates/russian_secured_private_root_ca.crt *(Доверенный сертификат)*
+- /usr/local/share/ca-certificates/russian_constrained_intermediate_ca.crt *(Промежуточный сертификат)*
 - /usr/share/doc/russiancrt/
 
 **Важно:** Если сертификаты Минцифры ставились ранее вручную, перед установкой пакета удалите их.
