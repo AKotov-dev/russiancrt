@@ -9,7 +9,7 @@
 - /usr/local/share/ca-certificates/russian_constrained_intermediate_ca.crt
 - /usr/share/doc/russiancrt/
 
-Для установки в браузерах:
+**Для установки в браузерах:**
 - russian_secured_private_root_ca.crt - Доверенный сертификат
 - russian_constrained_intermediate_ca.crt - Промежуточный сертификат
 
