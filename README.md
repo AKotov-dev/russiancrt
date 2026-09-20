@@ -2,17 +2,17 @@
 - **Требования к системе:** libnss >= v3.122; Mageia-10+, Fedora-44+, Ubuntu-26+
 - **Важно!** Если сертификаты Минцифры ставились ранее вручную, перед установкой пакета удалите их!
  
-Содержимое пакета RPM:
+**Содержимое пакета RPM:**
 - /usr/share/pki/ca-trust-source/anchors/russian_secured_private_root_ca.crt
 - /usr/share/pki/ca-trust-source/anchors/russian_constrained_intermediate_ca.crt
 - /usr/share/doc/russiancrt/
 
-Содержимое пакета DEB:
+**Содержимое пакета DEB:**
 - /usr/local/share/ca-certificates/russian_secured_private_root_ca.crt
 - /usr/local/share/ca-certificates/russian_constrained_intermediate_ca.crt
 - /usr/share/doc/russiancrt/
 
-**Для установки в chromium-браузерах:**
+**Для установки в Chromium-браузерах:**
 - russian_secured_private_root_ca.crt - Доверенный сертификат
 - russian_constrained_intermediate_ca.crt - Промежуточный сертификат
 
