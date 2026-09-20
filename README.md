@@ -30,7 +30,7 @@
   
 ![](https://github.com/AKotov-dev/russiancrt/blob/main/test5.png)
   
-Генерация модифицированных сертификатов выполняется [скриптом](https://github.com/AKotov-dev/russiancrt/blob/main/secure-russiancrt.tar.gz), входящим в состав репозитория.  
+Генерация модифицированных сертификатов выполнялась [скриптом](https://github.com/AKotov-dev/russiancrt/blob/main/secure-russiancrt.tar.gz), входящим в состав репозитория.  
 Исходный закрытый ключ УЦ не используется и не требуется.  
   
 
