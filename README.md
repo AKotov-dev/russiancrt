@@ -44,6 +44,8 @@
   
 [Стоит ли устанавливать российские сертификаты?](https://www.blancvpn.com/blog/stoit-li-ustanavlivat-rossiiskii-tls-sertifikat-s-gosuslug)  
   
+[Сертификаты Минцифры — как им не доверять](https://habr.com/ru/articles/1071256/)
+  
 [Техническое: локальный корневой сертификат с кросс-подписью и nameConstraints](https://dxdt.blog/2026/08/22/18987/?utm_source=chatgpt.com)  
   
 [Сертификаты Минцифры](https://www.gosuslugi.ru/crt) для установки в Linux.  
