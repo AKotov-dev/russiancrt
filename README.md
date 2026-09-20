@@ -9,11 +9,13 @@
 - /usr/local/share/ca-certificates/russian_constrained_intermediate_ca.crt
 - /usr/share/doc/russiancrt/
 
-**Для установки в браузерах:**
+**Для установки в chromium-браузерах:**
 - russian_secured_private_root_ca.crt - Доверенный сертификат
 - russian_constrained_intermediate_ca.crt - Промежуточный сертификат
 
-**Важно:** Если сертификаты Минцифры ставились ранее вручную, перед установкой пакета удалите их.
+**Важно:** Если сертификаты Минцифры ставились ранее вручную, перед установкой пакета удалите их.  
+  
+**Требования к системе:** Пакет nss >= v3.122; Mageia-10+, Fedora-44+, Ubuntu-26+.
 
 ## Безопасные сертификаты
 
