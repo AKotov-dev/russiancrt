@@ -55,7 +55,7 @@
 * Для проверки конечного результата:
 
   * `sberbank.ru` — должен открываться;
-  * `sberbank.com` — должен блокироваться с ошибкой вида `SEC_ERROR_CERT_NOT_IN_NAME_SPACE` в Firefox либо `permitted subtree violation` при проверке через OpenSSL.
+  * `sberbank.com` — должен блокироваться с ошибкой вида `SEC_ERROR_CERT_NOT_IN_NAME_SPACE`.
 
   
 Проверить действие ограничений можно с помощью [test_gui](https://github.com/AKotov-dev/russiancrt/blob/main/test_gui.tar.gz) (требуется gtk2).  
