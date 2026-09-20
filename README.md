@@ -1,4 +1,7 @@
 # russiancrt
+- **Требования к системе:** Пакет nss >= v3.122; Mageia-10+, Fedora-44+, Ubuntu-26+
+- **Важно:** Если сертификаты Минцифры ставились ранее вручную, перед установкой пакета удалите их
+ 
 Содержимое пакета RPM:
 - /usr/share/pki/ca-trust-source/anchors/russian_secured_private_root_ca.crt
 - /usr/share/pki/ca-trust-source/anchors/russian_constrained_intermediate_ca.crt
@@ -12,10 +15,6 @@
 **Для установки в chromium-браузерах:**
 - russian_secured_private_root_ca.crt - Доверенный сертификат
 - russian_constrained_intermediate_ca.crt - Промежуточный сертификат
-
-**Важно:** Если сертификаты Минцифры ставились ранее вручную, перед установкой пакета удалите их.  
-  
-**Требования к системе:** Пакет nss >= v3.122; Mageia-10+, Fedora-44+, Ubuntu-26+.
 
 ## Безопасные сертификаты
 
