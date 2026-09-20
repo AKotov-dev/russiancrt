@@ -10,9 +10,10 @@
 Все последующие обновления сертификатов также будут обрабатываться с помощью [этого](https://habr.com/ru/articles/1071256/) механизма.  
 
 **Требования к системе:** libnss >= v3.122; Mageia-10+, Fedora-44+, Ubuntu-26+, Debian-13.7+  
-> [!IMPORTANT]
-> **Важно!** Если сертификаты Минцифры ставились ранее вручную, перед установкой пакета удалите их!
- 
+**Важно!** Если сертификаты Минцифры ставились ранее вручную, перед установкой пакета удалите их!
+
+---
+
 **Содержимое пакета RPM:**
 - /usr/share/pki/ca-trust-source/anchors/russian_secured_private_root_ca.crt
 - /usr/share/pki/ca-trust-source/anchors/russian_constrained_intermediate_ca.crt
