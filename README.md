@@ -54,8 +54,8 @@
 
 * Для проверки конечного результата:
 
-  * `sberbank.ru` — должен открываться;
-  * `sberbank.com` — должен блокироваться с ошибкой вида `SEC_ERROR_CERT_NOT_IN_NAME_SPACE`.
+  * https://sberbank.ru — должен открываться;
+  * https://sberbank.com — должен блокироваться с ошибкой вида `SEC_ERROR_CERT_NOT_IN_NAME_SPACE`.
 
   
 Проверить действие ограничений удобнее с помощью [test_gui](https://github.com/AKotov-dev/russiancrt/blob/main/test_gui.tar.gz) (требуется gtk2).  
