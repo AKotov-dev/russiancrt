@@ -73,7 +73,7 @@
 
 На вкладке **Сертификаты** импортируем оригинальный сертификат Минцифры:
 
-`russian_trusted_root_ca_pem.crt`
+[russian_trusted_root_ca_pem.crt](https://gu-st.ru/content/lending/russian_trusted_root_ca_pem.crt)
 
 На сертификате `russian_trusted_root_ca_pem.crt` нажимаем:
 
