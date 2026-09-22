@@ -161,16 +161,14 @@ permitted;DNS:.ru, permitted;DNS:.su, permitted;DNS:.xn--p1ai
 Теперь у нас есть два сертификата:
 
 ```text
-Secured-Private-Root.crt
-Russian_Trusted_Root_CA.crt
+Secured-Private-Root.crt (Доверенный)
+Russian_Trusted_Root_CA.crt (Промежуточный)
 ```
 
 Проверяем, что новый `Russian Trusted Root CA` действительно подписан нашим `Secured-Private-Root`:
 
 ```bash
-openssl verify \
-  -CAfile Secured-Private-Root.crt \
-  Russian_Trusted_Root_CA.crt
+openssl verify -CAfile Secured-Private-Root.crt Russian_Trusted_Root_CA.crt
 ```
 
 Должно получиться:
@@ -179,8 +177,7 @@ openssl verify \
 Russian_Trusted_Root_CA.crt: OK
 ```
 
-После этого сертификаты можно перенести на тестовую виртуальную машину и проверить работу `Name Constraints`.
-
+После этого сертификаты можно перенести в систему и проверить работу `Name Constraints`.
 
 ---
 <details>
