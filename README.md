@@ -63,7 +63,7 @@
 
 ---
 
-## Вариант-2: Создание сертификатов с помощью менеджера [XCA](https://github.com/chris2511/xca/releases)
+## Вариант-2: Создание сертификатов с помощью менеджера [XCA](https://github.com/chris2511/xca)
 
 ### Шаг 1. Создаём `Secured-Private-Root`
 
