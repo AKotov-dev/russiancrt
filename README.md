@@ -59,7 +59,126 @@
   * https://sberbank.com — должен блокироваться с ошибкой вида `SEC_ERROR_CERT_NOT_IN_NAME_SPACE`.
 
   
-Проверять действие ограничений удобнее с помощью [test_gui](https://github.com/AKotov-dev/russiancrt/blob/main/test_gui.tar.gz) (требуется gtk2; см. скриншот).  
+Проверить действие ограничений можно с помощью [test_gui](https://github.com/AKotov-dev/russiancrt/blob/main/test_gui.tar.gz) (требуется gtk2; см. скриншот).
+
+---
+
+## Вариант-2: Создание сертификатов с помощью менеджера [XCA](https://github.com/chris2511/xca/releases)
+
+## Шаг 1. Создаём `Secured-Private-Root`
+
+Создаём **новый закрытый ключ** с именем `Secured-Private-Root`.
+
+На вкладке **Сертификаты** импортируем оригинальный сертификат Минцифры:
+
+`russian_trusted_root_ca_pem.crt`
+
+На сертификате `russian_trusted_root_ca_pem.crt` нажимаем:
+
+**ПКМ → Преобразовать → Открытый ключ**
+
+Это сохранит публичный ключ оригинального `Russian Trusted Root CA` в XCA. Он понадобится на следующем шаге.
+
+Затем на сертификате `russian_trusted_root_ca_pem.crt` нажимаем:
+
+**ПКМ → Преобразовать → Похожий сертификат**
+
+На вкладке **Субъект**:
+
+* **Внутреннее имя:** `Secured-Private-Root`
+* **commonName:** `Secured-Private-Root`
+
+Внизу слева проверяем, что в поле **Закрытый ключ** выбран:
+
+`Secured-Private-Root`
+
+На вкладке **Расширения** в поле **X.509 Name Constraints** указываем:
+
+```text
+permitted;DNS:.ru, permitted;DNS:.su, permitted;DNS:.xn--p1ai
+```
+
+Нажимаем **ОК**.
+
+В списке сертификатов появится `Secured-Private-Root`.
+
+Нажимаем на нём:
+
+**ПКМ → Экспорт → Файл**
+
+Сохраняем сертификат как:
+
+`Secured-Private-Root.crt`
+
+## Шаг 2. Переиздаём `Russian Trusted Root CA`
+
+Теперь создаём новый сертификат `Russian Trusted Root CA`, но подписываем его нашим `Secured-Private-Root`.
+
+На вкладке **Сертификаты** выбираем оригинальный сертификат Минцифры:
+
+`russian_trusted_root_ca_pem.crt`
+
+Нажимаем:
+
+**ПКМ → Преобразовать → Похожий сертификат**
+
+### Вкладка «Первоисточник»
+
+В разделе **Подписание** выбираем:
+
+**Использовать этот сертификат для подписи → `Secured-Private-Root`**
+
+### Вкладка «Субъект»
+
+**Внутреннее имя** оставляем:
+
+`Russian Trusted Root CA`
+
+В поле выбора ключа выбираем:
+
+`Russian Trusted Root CA (RSA:4096 bit Открытый ключ)`
+
+⚠️ **Важно:** выбираем именно публичный ключ оригинального сертификата, который был получен через **ПКМ → Преобразовать → Открытый ключ**.
+
+Не создаём новый ключ.
+
+Нажимаем **ОК**.
+
+В XCA могут одновременно находиться несколько сертификатов с одинаковым именем. Если `Secured-Private-Root` перекрывает новый `Russian Trusted Root CA`, можно временно удалить `Secured-Private-Root` **только из списка XCA**, чтобы увидеть нужный сертификат. Сам файл `Secured-Private-Root.crt` при этом не удаляем.
+
+На новом `Russian Trusted Root CA` нажимаем:
+
+**ПКМ → Экспорт → Файл**
+
+Сохраняем:
+
+`Russian_Trusted_Root_CA.crt`
+
+### Шаг 3. Проверяем результат
+
+Теперь у нас есть два сертификата:
+
+```text
+Secured-Private-Root.crt
+Russian_Trusted_Root_CA.crt
+```
+
+Проверяем, что новый `Russian Trusted Root CA` действительно подписан нашим `Secured-Private-Root`:
+
+```bash
+openssl verify \
+  -CAfile Secured-Private-Root.crt \
+  Russian_Trusted_Root_CA.crt
+```
+
+Должно получиться:
+
+```text
+Russian_Trusted_Root_CA.crt: OK
+```
+
+После этого сертификаты можно перенести на тестовую виртуальную машину и проверить работу `Name Constraints`.
+
 
 ---
 <details>
