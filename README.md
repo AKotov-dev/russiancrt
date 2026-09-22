@@ -142,8 +142,6 @@ permitted;DNS:.ru, permitted;DNS:.su, permitted;DNS:.xn--p1ai
 > [!IMPORTANT]
 > Выбираем именно публичный ключ оригинального сертификата, который был получен через **ПКМ → Преобразовать → Открытый ключ**.
 
-Не создаём новый ключ.
-
 Нажимаем **ОК**.
 
 ![](https://github.com/AKotov-dev/russiancrt/blob/main/xca2.png)
