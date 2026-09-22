@@ -175,7 +175,7 @@ openssl verify -CAfile Secured-Private-Root.crt Russian_Trusted_Root_CA.crt
 Russian_Trusted_Root_CA.crt: OK
 ```
 
-После этого сертификаты можно перенести в систему и проверить работу `Name Constraints`.
+После этого сертификаты можно перенести в систему и проверить работу `Name Constraints` (см. выше).
 
 ---
 <details>
