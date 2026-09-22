@@ -146,7 +146,7 @@ permitted;DNS:.ru, permitted;DNS:.su, permitted;DNS:.xn--p1ai
 
 Нажимаем **ОК**.
 
-![](https://github.com/AKotov-dev/russiancrt/blob/main/xca1.png)
+![](https://github.com/AKotov-dev/russiancrt/blob/main/xca2.png)
 
 На новом `Russian Trusted Root CA` нажимаем:
 
