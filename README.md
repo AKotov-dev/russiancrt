@@ -65,7 +65,7 @@
 
 ## Вариант-2: Создание сертификатов с помощью менеджера [XCA](https://github.com/chris2511/xca/releases)
 
-## Шаг 1. Создаём `Secured-Private-Root`
+### Шаг 1. Создаём `Secured-Private-Root`
 
 Создаём **новый закрытый ключ** с именем `Secured-Private-Root`.
 
@@ -110,7 +110,7 @@ permitted;DNS:.ru, permitted;DNS:.su, permitted;DNS:.xn--p1ai
 
 `Secured-Private-Root.crt`
 
-## Шаг 2. Переиздаём `Russian Trusted Root CA`
+### Шаг 2. Переиздаём `Russian Trusted Root CA`
 
 Теперь создаём новый сертификат `Russian Trusted Root CA`, но подписываем его нашим `Secured-Private-Root`.
 
