@@ -146,7 +146,7 @@ permitted;DNS:.ru, permitted;DNS:.su, permitted;DNS:.xn--p1ai
 
 Нажимаем **ОК**.
 
-В XCA могут одновременно находиться несколько сертификатов с одинаковым именем. Если `Secured-Private-Root` перекрывает новый `Russian Trusted Root CA`, можно временно удалить `Secured-Private-Root` **только из списка XCA**, чтобы увидеть нужный сертификат. Сам файл `Secured-Private-Root.crt` при этом не удаляем.
+![](https://github.com/AKotov-dev/russiancrt/blob/main/xca.png)
 
 На новом `Russian Trusted Root CA` нажимаем:
 
