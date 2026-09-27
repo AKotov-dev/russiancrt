@@ -25,7 +25,7 @@
 - /usr/local/share/ca-certificates/russian_constrained_intermediate_ca.crt
 - /usr/share/doc/russiancrt/
 
-**В случае ручного импорта:**
+**Для ручного импорта:**
 - russian_secured_private_root_ca.crt - Доверенный сертификат
 - russian_constrained_intermediate_ca.crt - Промежуточный сертификат
   
@@ -37,7 +37,7 @@
 
 **Порядок установки / использование:**
 
-* **Mageia/Fedora** — Firefox / Chromium-браузеры используют системное хранилище сертификатов автоматически и начинают работать с сертификатами сразу по факту установки.
+* **Mageia/Fedora** — Firefox / Chromium-браузеры используют системное хранилище автоматически и начинают работать с сертификатами по факту их установки.
 
 * **Debian/Ubuntu + Firefox** — одного системного `ca-certificates` недостаточно, если Firefox не подключён к системному хранилищу. Для Firefox, использующего собственный NSS, необходимо установить `p11-kit`/`p11-kit-modules` и подключить в **«Устройства безопасности»** модуль:
 
