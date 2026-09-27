@@ -29,7 +29,7 @@
 - russian_secured_private_root_ca.crt - Доверенный сертификат
 - russian_constrained_intermediate_ca.crt - Промежуточный сертификат
   
-![](https://github.com/AKotov-dev/russiancrt/blob/main/test5.png)
+![](https://github.com/AKotov-dev/russiancrt/png/blob/main/test5.png)
   
 Генерация модифицированных сертификатов выполнялась [скриптом](https://github.com/AKotov-dev/russiancrt/blob/main/secure-russiancrt.tar.gz), входящим в состав репозитория.  
 Исходный закрытый ключ УЦ не используется и не требуется.  
