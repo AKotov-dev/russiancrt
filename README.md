@@ -45,7 +45,7 @@
   /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so
   ```
 
-  После подключения модуля Firefox получает сертификаты из системного **System Trust** и применяет `Name Constraints`.
+  После подключения модуля Firefox получает сертификаты из системного **System Trust**.
 
 * **Firefox Snap в Ubuntu** — особенно важно подключить `p11-kit-trust.so`: Snap Firefox использует собственный NSS и без этого модуля системные сертификаты могут не использоваться Firefox автоматически.
 
