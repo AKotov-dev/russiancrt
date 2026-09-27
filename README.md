@@ -60,9 +60,9 @@
   
 > **Примечание:** дополнительно проведено успешное тестирование работы [сертификатов](https://github.com/AKotov-dev/russiancrt/blob/main/secure-russiancrt.tar.gz) с браузерами **Firefox** и **Brave** в Windows. Проверка выполнялась как через системное хранилище доверенных сертификатов, так и при ручном импорте сертификатов в браузер.
 >
-> ![](https://github.com/AKotov-dev/russiancrt/blob/main/png/win1.png)
+> ![](https://github.com/AKotov-dev/russiancrt/blob/main/png/win11.png)
 >
-> ![](https://github.com/AKotov-dev/russiancrt/blob/main/png/win2.png)
+> ![](https://github.com/AKotov-dev/russiancrt/blob/main/png/win21.png)
 >
 > Тестирование на **Android** не проводилось по техническим причинам.
 
