@@ -57,9 +57,13 @@
   * https://sberbank.com — должен блокироваться с ошибкой вида `SEC_ERROR_CERT_NOT_IN_NAME_SPACE`.
 
 Проверить действие ограничений можно с помощью [test_gui](https://github.com/AKotov-dev/russiancrt/blob/main/test_gui.tar.gz) (требуется gtk2; см. скриншот).  
+
+---
+
+Дополнительно проведено успешное тестирование работы [сертификатов](https://github.com/AKotov-dev/russiancrt/blob/main/secure-russiancrt.tar.gz) с браузерами **Firefox** и **Brave** в Windows. Проверка выполнялась как через системное хранилище доверенных сертификатов, так и при ручном импорте сертификатов в браузер.  
   
-Дополнительно проведено успешное тестирование работы [сертификатов](https://github.com/AKotov-dev/russiancrt/blob/main/secure-russiancrt.tar.gz) с браузерами **Firefox** и **Brave** в Windows. Проверка выполнялась как через системное хранилище доверенных сертификатов, так и при ручном импорте сертификатов в браузер.
 ![](https://github.com/AKotov-dev/russiancrt/blob/main/png/win11.png)  
+  
 ![](https://github.com/AKotov-dev/russiancrt/blob/main/png/win21.png)  
   
 Тестирование на **Android** не проводилось по техническим причинам.
