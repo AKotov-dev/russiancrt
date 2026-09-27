@@ -64,7 +64,7 @@
 
 <details>
 <summary>Скриншоты установленных сертификатов в Windows-10...</summary>
-
+  
 ![](https://github.com/AKotov-dev/russiancrt/blob/main/png/win11.png)  
   
 ![](https://github.com/AKotov-dev/russiancrt/blob/main/png/win21.png)  
