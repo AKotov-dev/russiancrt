@@ -39,6 +39,8 @@
 
 * **Mageia/Fedora** — Firefox / Chromium-браузеры используют системное хранилище автоматически и начинают работать с сертификатами по факту их установки.
 
+* **Debian/Ubuntu + Chromium-браузеры** - требуют ручной установки [сертификатов](https://github.com/AKotov-dev/russiancrt/blob/main/secure-russiancrt.tar.gz).
+
 * **Debian/Ubuntu + Firefox** — одного системного `ca-certificates` недостаточно, если Firefox не подключён к системному хранилищу. Для Firefox, использующего собственный NSS, необходимо установить `p11-kit`/`p11-kit-modules` и подключить в **«Устройства безопасности»** модуль:
 
   ```text
