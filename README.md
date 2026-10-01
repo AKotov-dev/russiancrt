@@ -46,7 +46,7 @@
 ```
 sudo apt install -y ca-certificates libnss3 libnss3-tools p11-kit p11-kit-modules
 ```
-И подключить в **«Устройства безопасности»** модуль:
+И заагрузить модуль в Настройки - Приватность и защита - Дополнительные настройки - **«Устройства безопасности»**:
 ```
 /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so
 ```
