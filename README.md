@@ -51,9 +51,7 @@ sudo apt install -y ca-certificates libnss3 libnss3-tools p11-kit p11-kit-module
 /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so
 ```
 
-После подключения модуля Firefox получит сертификаты из **System Trust**.
-
-* **Firefox Snap в Ubuntu** — особенно важно подключить `p11-kit-trust.so`: Snap Firefox использует собственный NSS и без этого модуля системные сертификаты могут не использоваться Firefox автоматически.
+Теперь **Firefox** получит сертификаты из **System Trust**.
 
 * После перехода на системное хранилище **необходимо удалить импортированные ранее сертификаты** (ещё раз), очистить историю/кеш и перезапустить Firefox.
 
