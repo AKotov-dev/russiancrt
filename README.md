@@ -46,7 +46,7 @@
 ```
 sudo apt install -y ca-certificates libnss3 libnss3-tools p11-kit p11-kit-modules
 ```
-И заагрузить в Firefox - **«Устройства безопасности»** модуль:
+И заагрузить в Firefox - **Управление устройствами защиты** модуль:
 ```
 /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so
 ```
