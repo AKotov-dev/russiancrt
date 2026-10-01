@@ -41,7 +41,7 @@
 
 * **Debian/Ubuntu + Chromium-браузеры** - требуют ручной установки [сертификатов](https://github.com/AKotov-dev/russiancrt/blob/main/secure-russiancrt.tar.gz).
 
-* **Debian/Ubuntu + Firefox >= v150.0** — если Firefox не подключён к системному хранилищу необходимо установить пакеты:
+* **Debian/Ubuntu + Firefox >= v150.0** — если Firefox не подключен к системному хранилищу:
 
 ```
 sudo apt install -y ca-certificates libnss3 libnss3-tools p11-kit p11-kit-modules
