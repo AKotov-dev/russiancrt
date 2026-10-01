@@ -51,7 +51,7 @@ sudo apt install -y ca-certificates libnss3 libnss3-tools p11-kit p11-kit-module
 /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so
 ```
 
-Теперь **Firefox** получит сертификаты из **System Trust**.
+Теперь **Firefox** получит сертификаты из **system trust store**.
 
 * После перехода на системное хранилище **необходимо удалить импортированные ранее сертификаты Russian Trusted Root CA** (ещё раз), очистить историю/кеш и перезапустить Firefox.
 
