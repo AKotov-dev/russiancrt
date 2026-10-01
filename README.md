@@ -41,13 +41,17 @@
 
 * **Debian/Ubuntu + Chromium-браузеры** - требуют ручной установки [сертификатов](https://github.com/AKotov-dev/russiancrt/blob/main/secure-russiancrt.tar.gz).
 
-* **Debian/Ubuntu + Firefox >= v150.0** — одного системного `ca-certificates` недостаточно, если Firefox не подключён к системному хранилищу. Для Firefox, использующего собственный NSS, необходимо установить `p11-kit`/`p11-kit-modules` и подключить в **«Устройства безопасности»** модуль:
+* **Debian/Ubuntu + Firefox >= v150.0** — если Firefox не подключён к системному хранилищу необходимо установить пакеты:
 
-  ```text
-  /usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so
-  ```
+```
+sudo apt install -y ca-certificates libnss3 libnss3-tools p11-kit p11-kit-modules
+```
+И подключить в **«Устройства безопасности»** модуль:
+```
+/usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so
+```
 
-  После подключения модуля Firefox получает сертификаты из системного **System Trust**.
+После подключения модуля Firefox получит сертификаты из **System Trust**.
 
 * **Firefox Snap в Ubuntu** — особенно важно подключить `p11-kit-trust.so`: Snap Firefox использует собственный NSS и без этого модуля системные сертификаты могут не использоваться Firefox автоматически.
 
