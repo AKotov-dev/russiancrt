@@ -1,4 +1,4 @@
-## ![](https://github.com/AKotov-dev/russiancrt/blob/main/png/test48.png) russiancrt - безопасные сертификаты Минцифры
+## russiancrt - безопасные сертификаты Минцифры
 
 Пакеты `russiancrt` (RPM / DEB) содержат модифицированные сертификаты доверия Минцифры с ограничением области применения посредством механизма **X.509 `nameConstraints`**.  
   
